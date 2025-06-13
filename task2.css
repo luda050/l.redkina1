@@ -1,5 +1,5 @@
 *{
-    font-family:Arial ;
+    font-family: Arial;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,27 +8,32 @@
 .back-to-main{
     display: block;
     margin: 20px;
-    width: max-content;
 }
 
+
 body{
-    background: #f5f5f5;
+    background:#f5f5f5;
 }
 
 
 .card{
-    max-width: 100%;
+    max-width: 500px;
+    width: 100%;
     background: white;
     margin: 20px auto;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1,);
+    box-shadow: 0px 5px 15px rgba(0,0,0,1);
+    transition: 0.3s;
 
 }
 
-.card :hover{
+.card:hover{
     transform: scale(1.02);
 }
+
+
+
 
 .card .favorite{
     text-align: right;
@@ -36,9 +41,7 @@ body{
 
 .card .favorite a{
     text-decoration: none;
-
 }
-
 .card img{
     width: 100%;
 }
@@ -50,6 +53,7 @@ body{
 
 .card .info{
     line-height: 1.2;
+
     margin: 16px 0px;
 }
 
@@ -71,10 +75,10 @@ body{
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius:5px ;
     cursor: pointer;
-}
 
+}
 .card button:hover{
-    opacity: 0.8;
+    filter: brightness(0.9);
 }
