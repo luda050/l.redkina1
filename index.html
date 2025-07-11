@@ -1,25 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/task6.css">
-</head>
-<body>
- <section class="gallery">
-    <img id="big-image" src="images/image-1.jpg" alt="">
-    <div class="images">
-        <img id="img-1" src="images/image-1.jpg" alt="">
-        <img id="img-2" src="images/image-2.jpg" alt="">
-        <img id="img-3" src="images/image-3.jpg" alt="">
-        <img id="img-4" src="images/image-4.jpg" alt="">
-        <img id="img-5" src="images/image-5.jpg" alt="">
+    <title>Название сайта</title>
 
-    </div>
- </section>
-    
-    <script src="js/task6.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">Poke<span>Mon</span></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">PokeMon</h1>
+                <p class="hero__subtitle">Выбери своего PokeMona</p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Каталог</a>
+                    <a href="#contacts" class="btn btn--outline">Найти нас</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="images/img-5.jpg" alt="">
+                    </div>
+                    <div class="about__content">
+                        <h2 class="section-title">Всё о PokeMon</h2>
+                        <p class="about__text">Покемон — вымышленное существо, персонаж компьютерной игры, а также медиафраншизы. Название происходит от английского выражения pocket monster — «карманный монстр».</p>
+                        <p class="about__text">Покемоны делятся на различные виды, которые зависят от стихии и других особенностей</p>
+                        <ul class="about__features">
+                            <li class="feature-item">
+                                <span></span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fa-regular fa-thumbs-up"></i>&ensp;
+                                <span>Некоторые покемоны могут разговаривать.</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fa-regular fa-thumbs-up"></i>&ensp;
+                                <span>Они бывают разных видов  и обладают сверхъестественными способностями</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fa-regular fa-thumbs-up"></i>&ensp;
+                                <span>У многих тренеров есть Покедекс, карманная электронная энциклопедия, где содержится информация про покемонов</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Каталог</h2>
+                <div class="menu__content active" id="coffee">
+                    <div class="menu__grid">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Огонь</h3>
+                                <span class="menu-item__price">500 рублей </span>
+                            </div>
+                            <p class="menu-item__description">Покемоны огненного типа способны дышать огнём (а некоторые даже состоят из него), поэтому они очень уязвимы к атакам водного, каменного и наземного типов</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Вода</h3>
+                                <span class="menu-item__price">570 рублей</span>
+                            </div>
+                            <p class="menu-item__description">Покемоны водного типа — пожалуй, самые распространённые и универсальные покемоны.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Электрический</h3>
+                                <span class="menu-item__price">620 рублей</span>
+                            </div>
+                            <p class="menu-item__description">Покемоны электрического типа способны генерировать в своём теле огромное количество электричества.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Сталь</h3>
+                                <span class="menu-item__price">680 рублей</span>
+                            </div>
+                            <p class="menu-item__description">Покемоны стального типа физически сильнее всех остальных типов покемонов. Благодаря содержанию металла в их телах они обладают значительно более высокой защитой, чем другие покемоны.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Призрак</h3>
+                                <span class="menu-item__price">650 рублей</span>
+                            </div>
+                            <p class="menu-item__description">Призрачные покемоны — это загадочные существа, обитающие в другом измерении. </p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <h3 class="menu-item__title">Дракон</h3>
+                                <span class="menu-item__price">750 рублей</span>
+                            </div>
+                            <p class="menu-item__description">Пожалуй, самый мощный из всех типов покемонов . Их физические и специальные атаки наносят большой урон покемонам любого типа, кроме стальных, а покемоны типа «дракон» обладают высокой устойчивостью к атакам типа «вода», «трава», «огонь» и «электричество».</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Классная игршка! Ребёнок в восторге!</p>
+                        <div class="review__author">
+                            <img src="images/img-3.jpeg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Анна</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Товар мне понравился, буду заказывать еще! </p>
+                        <div class="review__author">
+                            <img src="images/img-2.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Иван</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Пришло всё во время, Покемон супер!</p>
+                        <div class="review__author">
+                            <img src="images/img-1.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Кира</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>ХМАО г. Нефтеюганск 12 МКР д. 28</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+7(3463)25-86-47</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>pokemon@bk.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>Пн-Пт 9:00-21:00 <br> Сб-Вс 10:00-20:00</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Telegram"><i
+                                    class="fab fa-telegram-plane"></i></a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.360666459392!2d72.62734552560325!3d61.08524439705334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x437464cd39f99dd7%3A0x3a8d2fc6a570758b!2z0K7QotCf0KEt0KHQtdCy0LXRgA!5e0!3m2!1sru!2sru!4v1752232183136!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo">Poke<span>Mon</span></a>
+                    <p class="footer__text">Выбери своего PokeMona</p>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Главная</a></li>
+                        <li><a href="#menu" class="footer__link">Меню</a></li>
+                        <li><a href="#about" class="footer__link">О нас</a></li>
+                        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__title">Подписка</h3>
+                    <p class="footer__text">Подпишитесь на наши новости и акции</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright 2025. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
